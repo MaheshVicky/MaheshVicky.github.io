@@ -17,10 +17,16 @@
 	<style>
 		.dummy{
 			background-image: url('images/circuit.jpg');
-			background-repeat:repeat-y;
-			background-attachment: scroll local;
-			background-size: 100% 40%;
+			background-repeat:no-repeat;
+			background-attachment: fixed;
+			background-position: center center;
+			background-size: 100% auto;
 			color: #FFFFFF;
+			@media only screen and (min-width: 400px) {
+    		body { 
+       			 background-image: url('images/circuit.jpg'); 
+   				}
+			}
 		}
 		</style>
 </head>
